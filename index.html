@@ -1,0 +1,61 @@
+<html>
+    <title> Project for AD Calculations </title>
+    <head>
+        <link type="text/css" rel = "stylesheet" href = "stylesheet_v1.css">
+       
+    </head>
+        <h1> Air Data Calculator </h1>
+        
+        <form id = "theform" action = "" method = "" onSubmit="return false">
+            <p>
+                <table>
+                    <colgroup>
+                        <col span="1" class="input_label">
+                        <col span="1" class="input_text">
+                        <col span="1" class="other_unit">
+                    </colgroup>
+
+                <tr>
+                    <td colspan ="3" style="text-align:center" > <h2>TAS Calculator</h2></td>    
+                </tr>    
+                <tr>
+                    <td><input type="radio" name="yesorno" id="Ruski" checked="checked" onclick="ac_selector();tas_calculator()" > Ruski &emsp; &emsp; &emsp;  </td>
+                    <td><input type="radio" name="yesorno" id="West" onclick="ac_selector();tas_calculator()" > West  </td></br></br>
+                </tr>
+
+                <tr>
+                    <td><label for="cas">CAS:</label></td>
+                    <td><input type="text" id="cas" placeholder="KMPH" onkeyup="tas_calculator();" autofocus="autofocus" name=""> </br> </br></td>
+                    <td><label id="cas_other_unit">  </label> </td>
+                </tr>
+
+                <tr>
+                    <td><label for="altitude">Altitude:</label></td>
+                    <td><input type="text" id="altitude" placeholder="KM" onkeyup="tas_calculator();" name=""> </br> </br></td>
+                    <td><label id="alt_other_unit">  </label></td>
+                </tr>
+
+                <tr>
+                    <td><label for="isa_delta">ISA+T (C):</label></td>
+                    <td><input type="text" id="isa_delta" placeholder="C" onkeyup="tas_calculator();" name=""> </br> </br></td>
+                    
+                </tr>
+
+                <tr>
+                    <td><label id="tas_k">TAS:</label></td>
+                    <td><input type="text" readonly id="tas"  name="tas"> </br> </br></td>
+                    <td><label id="tas_other_unit">  </label></td>
+                </tr>
+
+                </table>
+
+            </p>
+        
+            <label id="status_1"> </label> </br></br>
+            <label id="status_2"> </label>
+
+        </form>
+          
+
+        <script src=test.js></script>
+</html>
