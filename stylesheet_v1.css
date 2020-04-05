@@ -1,0 +1,19 @@
+#theform {
+    color:white;
+    display: table;
+    padding:15px;
+    background-color: #2c8F77;
+    border: solid 2px black;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.input_label {
+    background-color: #2c8F77;
+}
+
+.input {
+    align-content: center;
+    padding:15px;
+    float: center;
+}
