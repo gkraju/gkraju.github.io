@@ -1,10 +1,10 @@
 <html>
     <title> AVI CALC </title>
     <head>
-        <link type="text/css" rel = "stylesheet" href = "stylesheet_v6.css">
+        <link type="text/css" rel = "stylesheet" href = "stylesheet_v7.css">
     </head>
     <h1 align="center" > Aviation Calculator </h1>
-    <h2 align="center" font-size:5px> <i> Phi Psi Khi </i> </h2>
+    <h2 align="center" font-size:5px> <i> Please Report Suggestions & Bugs to  8888027872 </i> </h2>
     <div id = "divLeft">
          
         <form id = "form_1" action = "" method = "" onSubmit="return false" display = "inline">
@@ -21,16 +21,16 @@
 
                 </tr>    
                 <tr>
-                    <td valign="top" ><input type="radio" name="yesorno" id="f1_Ruski" checked="checked" onclick="f1_ac_selector();f1_calc1()" > Rus (KMPH,KM) </td>
-                    <td valign="top" ><input type="radio" name="yesorno" id="f1_West" onclick="f1_ac_selector();f1_calc1()" > West (Kt,ft) </td></br></br>
+                    <td valign="top" ><input type="radio" name="yesorno" id="f1_Ruski" checked="checked" onclick="f1_ac_selector();f1_calc1()" > Metric (KMPH,KM) </td>
+                    <td valign="top" ><input type="radio" name="yesorno" id="f1_West" onclick="f1_ac_selector();f1_calc1()" > Imperial (Kt,ft) </td></br></br>
                 </tr>
                 <tr>
                     <td colspan ="3" style="text-align:center" > <h3> . </h3></td>
                 </tr>
-                <tr>
-                    <td valign="top" ><label for="f1_cas_l">CAS:</label></td>  
-                    <td><input type="text" size="10" id="f1_cas" placeholder="KMPH" onkeyup="f1_calc1();" autofocus="autofocus" name=""> </br> </br></td>
-                    <td valign="top" ><label id="f1_cas_other_unit">  </label> </td>
+                <tr >
+                    <td valign="top" style="width:90px" ><label for="f1_cas_l">CAS:</label></td>  
+                    <td><input type="text" valign="top" size="10" id="f1_cas" placeholder="KMPH" onkeyup="f1_calc1();" autofocus="autofocus" name=""> </br> </br></td>
+                    <td valign="top" style="width:150px" ><label id="f1_cas_other_unit">  </label> </td>
                 </tr>
 
                 <tr>
@@ -68,6 +68,11 @@
                     <td><input type="text" size="10" readonly id="f1_dp"  name="dp"> </br> </br></td>
                     <td valign="top" ><label id="f1_dp_other_unit">  </label></td>
                 </tr>
+
+                <tr>
+                    <td valign="top" ><label id="f1_ti_label">Ti (&#176C):</label></td>
+                    <td><input type="text" size="10" readonly id="f1_ti"  name="ti"> </br> </br></td>
+                </tr>
                 
 
                 </table>
@@ -96,8 +101,8 @@
                 </tr>    
                 
                 <tr>
-                    <td><input type="radio" name="yesorno" id="f2_Ruski" checked="checked" onclick="f2_ac_selector();f2_calc2()" > Rus (KMPH,KM)</td>
-                    <td><input type="radio" name="yesorno" id="f2_West" onclick="f2_ac_selector();f2_calc2()" > West (Kt,ft)  </td></br></br>
+                    <td><input type="radio" name="yesorno" id="f2_Ruski" checked="checked" onclick="f2_ac_selector();f2_calc2()" > Metric (KMPH,KM)</td>
+                    <td><input type="radio" name="yesorno" id="f2_West" onclick="f2_ac_selector();f2_calc2()" > Imperial (Kt,ft)  </td></br></br>
                 </tr>
                 <tr>
                     <td colspan ="3" style="text-align:center" > <h3> . </h3></td>
@@ -108,9 +113,9 @@
                 </tr>
 
                 <tr>
-                    <td valign="top" ><label for="f2_altitude">Altitude:</label></td>
+                    <td valign="top" style="width:90px" ><label for="f2_altitude">Altitude:</label></td>
                     <td><input type="text" size="10" id="f2_altitude" placeholder="KM" onkeyup="f2_calc2()" name=""> </br> </br></td>
-                    <td valign="top" ><label id="f2_alt_other_unit">  </label></td>
+                    <td valign="top" style="width:150px" ><label id="f2_alt_other_unit">  </label></td>
                 </tr>
                 <tr>
                     <td valign="top" ><label for="f2_isa_delta_l">ISA+&#916T(&#176C):</label></td>
@@ -140,6 +145,11 @@
                     <td valign="top" ><label id="f2_dp_other_unit">  </label></td>
                 </tr>
 
+                <tr>
+                    <td valign="top" ><label id="f2_ti_label">Ti (&#176C):</label></td>
+                    <td><input type="text" size="10" readonly id="f2_ti"  name="ti"> </br> </br></td>
+                </tr>
+
                 </table>
             </p>
             
@@ -164,16 +174,16 @@
                     <td colspan ="3" style="text-align:center" > <h2>TAS to MACH, EAS & CAS </h2></td>    
                 </tr>    
                 <tr>
-                    <td><input type="radio" name="yesorno" id="f3_Ruski" checked="checked" onclick="f3_ac_selector();f3_calc3()" > Rus (KMPH,KM)  </td>
-                    <td><input type="radio" name="yesorno" id="f3_West" onclick="f3_ac_selector();f3_calc3()" > West (Kt,ft)  </td></br></br>
+                    <td><input type="radio" name="yesorno" id="f3_Ruski" checked="checked" onclick="f3_ac_selector();f3_calc3()" > Metric (KMPH,KM)  </td>
+                    <td><input type="radio" name="yesorno" id="f3_West" onclick="f3_ac_selector();f3_calc3()" > Imperial (Kt,ft)  </td></br></br>
                 </tr>
                 <tr>
                     <td colspan ="3" style="text-align:center" > <h3> . </h3></td>
                 </tr>
                 <tr>
-                    <td valign="top" ><label for="f3_tas_l">TAS:</label></td>
+                    <td valign="top" style="width:90px" ><label for="f3_tas_l">TAS:</label></td>
                     <td><input type="text" size="10" id="f3_tas" placeholder="KMPH" onkeyup="f3_calc3();" autofocus="autofocus" name=""> </br> </br></td>
-                    <td valign="top" ><label id="f3_tas_other_unit">  </label></td>
+                    <td valign="top" style="width:150px" ><label id="f3_tas_other_unit">  </label></td>
                 </tr>
 
                 <tr>
@@ -208,11 +218,16 @@
                     <td valign="top" ><label id="f3_dp_other_unit">  </label></td>
                 </tr>
 
+                <tr>
+                    <td valign="top" ><label id="f3_ti_label">Ti (&#176C):</label></td>
+                    <td><input type="text" size="10" readonly id="f3_ti"  name="ti"> </br> </br></td>
+                </tr>
+
                 </table>
 
             </p>
-            <label id="f3_status_1" style="color:black"> </label> </br></br>
-            <label id="f3_status_2" style="color:black"> </label>
+            <label id="f3_status_1" style="color:black; height:150px"> </label> </br></br>
+            <label id="f3_status_2" style="color:black; height:150px"> </label>
 
         </form>
     </div>
@@ -232,8 +247,8 @@
                     <td colspan ="3" style="text-align:center" > <h2>Crossover Altitude </h2></td>    
                 </tr>    
                 <tr>
-                    <td><input type="radio" name="yesorno" id="f4_Ruski" checked="checked" onclick="f4_ac_selector();f4_calc4()" > Rus (KMPH,KM)  </td>
-                    <td><input type="radio" name="yesorno" id="f4_West" onclick="f4_ac_selector();f4_calc4()" > West (Kt,ft)  </td></br></br>
+                    <td><input type="radio" name="yesorno" id="f4_Ruski" checked="checked" onclick="f4_ac_selector();f4_calc4()" > Metric (KMPH,KM)  </td>
+                    <td><input type="radio" name="yesorno" id="f4_West" onclick="f4_ac_selector();f4_calc4()" > Imperial (Kt,ft)  </td></br></br>
                 </tr>
                 <tr>
                     <td colspan ="3" style="text-align:center" > <h3> . </h3></td>
@@ -246,7 +261,7 @@
 
                 <tr>
                     <td valign="top" ><label for="f4_m_l">M:</label></td>
-                    <td><input type="text" size="10" id="f4_m" placeholder="KM" onkeyup="f4_calc4()" name=""> </br> </br></td>
+                    <td><input type="text" size="10" id="f4_m" placeholder="" onkeyup="f4_calc4()" name=""> </br> </br></td>
                     <td valign="top" ><label id="f4_m_other_unit">  </label></td>
                 </tr>
                 <tr>
@@ -262,9 +277,5 @@
 
         </form>
     </div>
-
-
-
- 
-    <script src=test_v6.js></script>
+    <script src=test_v7.js></script>
 </html>
