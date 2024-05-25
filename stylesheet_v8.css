@@ -1,0 +1,72 @@
+#form_1 {
+    color:white;
+    display: table;
+    padding:5px 10px 40px 20px;
+    background-color:#F08080;
+    border: solid 2px black;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    width: 450px;
+    height: 650px;
+    margin-left: 20px;
+    margin-right: 20px;    
+}
+
+#form_2 {
+    color:white;
+    display: table;
+    padding:5px 10px 40px 20px;
+    background-color: #85C1E9;
+    border: solid 2px black;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    width: 450px;
+    height: 650px;
+    margin-left: 20px;
+    margin-right: 20px;    
+}
+
+#form_3 {
+    color:white;
+    display: table;
+    padding:5px 10px 40px 20px;
+    background-color: #F1948A;
+    border: solid 2px black;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    width: 450px;
+    height: 650px;
+    margin-left: 20px;
+    margin-right: 30px;
+}
+
+#form_4 {
+    color:white;
+    display: table;
+    padding:5px 10px 40px 20px;
+    background-color: #CD6155;
+    border: solid 2px black;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    width: 340px;
+    height: 216px;
+    margin-left: 20px;
+    margin-right: 30px;
+}
+
+
+#divLeft{
+    float:left;
+}
+
+#divRight{
+    float:right;
+}
+
+#divCen{
+    float:centre;
+}
